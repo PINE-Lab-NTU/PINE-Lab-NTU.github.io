@@ -47,8 +47,9 @@
 	
     <body data-spy="scroll" data-offset="80">
 	
+		<!--开局动画-->
 		<!-- START PRELOADER  -->	
-		<div class="preloader">
+		<!-- <div class="preloader">
 			<div class="animation-container">
 				<div class="lightning-container">
 					<div class="lightning white"></div>
@@ -68,23 +69,24 @@
 					<div class="shape triangle blue"></div>
 				</div>
 			</div>
-		</div>	
+		</div>	 -->
 		<!--  END PRELOADER -->	
 
+		<!--logo-->
 		<!-- START NAVBAR -->  
 		<div id="navigation" class="navbar-light bg-faded site-navigation">
 			<div class="container">
 				<div class="row">
 					<div class="col-xl-2 col-md-3 col-sm-4 align-self-center">
 						<div class="site-logo">
-							<a href=""><img src="static/title/logo1.png" alt=""></a>          				
+							<a href=""><img src="static/title/logo0.png" alt="" style="filter: brightness(100%);"></a>
 						</div>
 					</div><!--- END Col -->
 					
 					<div class="col-xl-8 col-md-9 col-sm-8 d-flex justify-content-center">
 						<nav id="main-menu">
 							<ul>
-								<li><a href="">Home</a></li>			
+								<li><a href="index.html">Home</a></li>			
 								<li><a href="team.html">team</a></li>	
 								<li><a href="Research.html">Research</a></li>
 									<!--Research没有单独页-->							
@@ -121,64 +123,18 @@
 		</div> 	  
 		<!-- END NAVBAR -->
 
+		<!--背景-->
 		<!-- START HOME -->
-		<section class="page_banner" style="background-image: url(static/image/2.jpg);  background-size:cover; background-position: center center;">
+		<section class="page_banner" style="background-image: url(static/image/4.png);filter: brightness(240%);  background-size:cover; background-position: center center;">
 			<div class="banner_overlay">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12 text-center">
-							<!-- <h1 class="section-blog-title">The team</h1>
-							<ul>
-								<li><a href="#">This is our big family</a></li>
-							</ul> -->
 						</div>
 					</div>
 				</div>
 			</div>
 		</section><!--- END slide -->
-<!--第二张背景图-->
-			<!-- <div class="single_home_slide" style="background-image: url(static/image/2.jpg);   background-size:75%;">
-				<div class="slide_overlay">
-					<div class="container">
-						<div class="row">
-						  <div class="col-md-12 text-center">
-							<div class="hero-text">								 -->
-								<!-- <p>MMLab@NTU</p>
-								<h1>
-									Multimedia Laboratory @ <br> Nanyang Technological University <br>Affiliated with S-Lab
-								</h1>
-								
-								<div class="sl_btn_group">	
-									<a href="team.html" class="btn_yellow">About Us</a>
-									<a href="joinus.html" class="btn_white">Join Us</a>
-								</div>				 -->
-							<!-- </div>
-						  </div>		  
-						</div>
-					</div>
-				</div>		
-			</div>			 -->
-<!--第三张背景图-->			
-			<!-- <div class="single_home_slide" style="background-image: url(static/image/3.jpg);  ;">
-				<div class="slide_overlay">
-					<div class="container">
-						<div class="row">
-						  <div class="col-md-12 text-center">
-							<div class="hero-text"> -->
-								<!-- <p>MMLab@NTU</p>
-								<h1>
-									Multimedia Laboratory @ <br> Nanyang Technological University <br>Affiliated with S-Lab
-								</h1>
-								<div class="sl_btn_group">	
-									<a href="team.html" class="btn_yellow">About Us</a>
-									<a href="joinus.html" class="btn_white">Join Us</a>
-								</div>				 -->
-							<!-- </div>
-						  </div>	  
-						</div>
-					</div>
-				</div>
-			</div> -->
 
 		</section>
 		<!-- END  HOME DESIGN -->
@@ -201,12 +157,16 @@
 					<div class="row">
 						<div class="col-12" data-aos="fade-up">
 							<div class="section-title text-center">
+								<br>
 								<span>About Us</span>
-								<h2>What are we going to do </h2>
-								<p style="text-align: left; font-size: 20px;">Our goal is to build an embodied vision system for autonomous systems to understand the physical world and achieve complex human goals such as household service, industrial assembly and item delivery. The system contains the following techniques:</p>
-								<p style="text-align: left; font-size: 20px;">Interactive Visual Perception that actively collects informative visual clues in large physical world e.g. vision-language navigation, online scene segmentation/detection</p>
-								<p style="text-align: left; font-size: 20px;">General Robotic Manipulation that changes the physical world based on human requirements e.g. visual affordance learning, diffusion policy learning
-									Resource-limited Model Deployment that adapts powerful large foundation models on embodied systems e.g. efficient network training, inference, and compilation.</p>
+								<!-- <h2>What are we going to do </h2> -->
+								<p style="text-align: left; font-size: 20px;font-family: Arial, sans-serif;">The goal of Perception and embodied INtElligence (PINE) Lab is to build embodied agents that perceive and interact with the physical world as humans, so that the robot can assist everyone everywhere in everyday life. <br>We focus on the following topics:<br>&nbsp;&nbsp;&nbsp;&nbsp;•Interactive visual perception e.g. vision-language navigation, online scene segmentation/detection<br>&nbsp;&nbsp;&nbsp;&nbsp;•General robotic manipulation e.g. robotic representation and policy learning<br>&nbsp;&nbsp;&nbsp;&nbsp;•On-device machine learning e.g. efficient network training, inference and compilation for robots<br>For more information, please visit our research page, or follow us on <a href="https://github.com/PINE-Lab-NTU" style="color: black;">github</a>, <a href="https://www.youtube.com/@Pine-wn4gh" style="color: black;">Youtube</a>&nbsp;and&nbsp;<a href="https://b23.tv/7CwLlVE" style="color: black;">;Bilibili</a>.<br><strong>We are always looking for self-motivated PhD students, postdocs, master students and research assistants. To join our lab, please see the Join Us page.</strong></p>
+								
+								<!-- <p style="text-align: left; font-size: 20px;font-family: Arial, sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;•Interactive visual perception e.g. vision-language navigation, online scene segmentation/detection<br>&nbsp;&nbsp;&nbsp;&nbsp;•General robotic manipulation e.g. robotic representation and policy learning<br>&nbsp;&nbsp;&nbsp;&nbsp;•On-device machine learning e.g. efficient network training, inference and compilation for robots</p> -->
+								<!-- <p style="text-align: left; font-size: 20px;"><em>•General robotic manipulation e.g. robotic representation and policy learning</em></p>
+								<p style="text-align: left; font-size: 20px;"><em>•On-device machine learning e.g. efficient network training, inference and compilation for robots</em></p> -->
+								<!-- <p style="text-align: left; font-size: 20px;font-family: Arial, sans-serif;">For more information, please visit our research page, or follow us on github, Youtube and Bilibili.</p>
+								<p style="text-align: left; font-size: 20px;font-family: Arial, sans-serif;"><strong>We are always looking for self-motivated PhD students, postdocs, master students and research assistants. To join our lab, please see the Join Us page.</strong></p> -->
 							</div>
 						</div><!-- END COL -->
 					</div><!-- END ROW -->		
@@ -217,11 +177,11 @@
 <!--成果展示 Demonstrate of experimental results-->
 	<!--Highlight-->
 		<!-- START TOP DEALS -->
-		<section id="top_deals" class="top_deals">
+		<section id="top_deals" class="top_deals" style="margin-top: -100px;">
 			<div class="container">
 				<div class="row">
 					<div class="col-12" data-aos="fade-up">
-						<div class="section-title text-center">
+						<div class="section-title text-center" style="margin-bottom: 15px;">
 							<span>Highlights</span>
 							<!-- <h2>Demonstration of experimental results </h2> -->
 						</div>
@@ -233,14 +193,14 @@
 					<div class="single-deal">
 						
 						<div class="deal-video">
-							<video src="static/videos/video1.mp4" controls style="width: 100%; height: auto;"></video>
-							<span class="tr-price"><span>♥</span>480</span>
+							<video src="static/videos/video1.mp4" controls style="width: 100%; height: 230px;"></video>
+							<!-- <span class="tr-price"><span>♥</span>480</span> -->
 						</div>
 						<div class="deal-content">	
-							<span class="sdcat">Egypt</span>
-							<h4><a href="tour-details.html">Traveler standing on stone</a></h4>	
+							<!-- <span class="sdcat">Egypt</span> -->
+							<h4><a href="https://xuxw98.github.io/DSPDet3D/">Real-time indoor online 3D scene perception</a></h4>	
 							<div class="deal_meta">									
-								<div class="sdmeta">
+								<!-- <div class="sdmeta">
 									<i class="fa-regular fa-clock"></i>
 									3 Days 4 Night
 								</div>		
@@ -253,7 +213,7 @@
 								<div class="sdmeta">
 									<i class="fa-regular fa-star"></i>
 									4.8
-								</div>
+								</div> -->
 							</div>
 						</div>						
 			
@@ -263,13 +223,13 @@
 						
 						<div class="deal-video">
 							<video src="static/videos/video2.mp4" controls style="width: 100%; height: auto;"></video>
-							<span class="tr-price"><span>♥</span>360</span>
+							<!-- <span class="tr-price"><span>♥</span>360</span> -->
 						</div>
 						<div class="deal-content">	
-							<span class="sdcat">India</span>
-							<h4><a href="tour-details.html">Taj Mahal, Agra, Uttar Pradesh, India</a></h4>	
+							<!-- <span class="sdcat">India</span> -->
+							<h4><a href="https://xuxw98.github.io/Online3D/">Online 3D Scene Perception</a></h4>	
 							<div class="deal_meta">									
-								<div class="sdmeta">
+								<!-- <div class="sdmeta">
 									<i class="fa-regular fa-clock"></i>
 									3 Days 4 Night
 								</div>		
@@ -282,7 +242,7 @@
 								<div class="sdmeta">
 									<i class="fa-regular fa-star"></i>
 									4.8
-								</div>
+								</div> -->
 							</div>
 						</div>						
 				
@@ -292,14 +252,14 @@
 
 						
 						<div class="deal-video">
-							<video src="static/videos/video3.mp4" controls style="width: 100%; height: auto;"></video>
-							<span class="tr-price"><span>♥</span>280</span>
+							<video src="static/videos/video3.mp4" controls style="width: 100%; height: 230px;"></video>
+							<!-- <span class="tr-price"><span>♥</span>280</span> -->
 						</div>
 						<div class="deal-content">	
-							<span class="sdcat">Switzerland</span>
-							<h4><a href="tour-details.html">Man in Front of Calm Body of Water</a></h4>	
+							<!-- <span class="sdcat">Switzerland</span> -->
+							<h4><a href="#">3D Online Segment Anything</a></h4>	
 							<div class="deal_meta">									
-								<div class="sdmeta">
+								<!-- <div class="sdmeta">
 									<i class="fa-regular fa-clock"></i>
 									3 Days 4 Night
 								</div>		
@@ -312,7 +272,7 @@
 								<div class="sdmeta">
 									<i class="fa-regular fa-star"></i>
 									4.8
-								</div>
+								</div> -->
 							</div>
 						</div>						
 					</div>
@@ -320,13 +280,13 @@
 					<div class="single-deal">
 						<div class="deal-video">
 							<video src="static/videos/video4.mp4" controls style="width: 100%; height: auto;"></video>
-							<span class="tr-price"><span>'♥'</span>250</span>
+							<!-- <span class="tr-price"><span>'♥'</span>250</span> -->
 						</div>
 						<div class="deal-content">	
-							<span class="sdcat">Switzerland</span>
-							<h4><a href="tour-details.html">Man Standing Near Body of Water</a></h4>	
+							<!-- <span class="sdcat">Switzerland</span> -->
+							<h4><a href="https://guanxinglu.github.io/ManiGaussian/">Generalized robotic manipulation representation learning</a></h4>	
 							<div class="deal_meta">									
-								<div class="sdmeta">
+								<!-- <div class="sdmeta">
 									<i class="fa-regular fa-clock"></i>
 									3 Days 4 Night
 								</div>		
@@ -339,7 +299,7 @@
 								<div class="sdmeta">
 									<i class="fa-regular fa-star"></i>
 									4.8
-								</div>
+								</div> -->
 							</div>
 						</div>						
 					</div>				
@@ -361,8 +321,9 @@
 			</div><!-- END ROW -->	
 
 			<ul class="post-list" style="display: inline-block; text-align: left; margin-left: 0px;">
-			<div class="container" >
-				<p style="margin-left: 10px; font-size: 18px;"><strong>2024-05:</strong> I will join School of Electrical and Electronic Engineering, Nanyang Technological University as an Assistant Professor 2024 Fall.<br><strong>2024-05:</strong> One paper is accepted to RAL.<br><strong>2024-05:</strong> One paper is accepted to IJCV.<br><strong>2024-02:</strong> Three papers are accepted to CVPR 2024.<br><strong>2024-02:</strong> One paper is accepted to TIP.<br><strong> 2023-10:</strong> One paper is accepted to TPAMI.<br><strong>2023-09:</strong> One paper is accepted to NeurIPS 2023.</p>
+			<div class="container"  style="margin-left: 0px;">
+				<p style="margin-left: 10px; font-size: 18px;font-family: Arial, sans-serif; margin-left:-600px;"><strong> 2024-06:</strong> PINE-Lab is established. Congratulation!</p>
+				<!-- <p style="margin-left: 10px; font-size: 18px;"><strong>2024-05:</strong> I will join School of Electrical and Electronic Engineering, Nanyang Technological University as an Assistant Professor 2024 Fall.<br><strong>2024-05:</strong> One paper is accepted to RAL.<br><strong>2024-05:</strong> One paper is accepted to IJCV.<br><strong>2024-02:</strong> Three papers are accepted to CVPR 2024.<br><strong>2024-02:</strong> One paper is accepted to TIP.<br><strong> 2023-10:</strong> One paper is accepted to TPAMI.<br><strong>2023-09:</strong> One paper is accepted to NeurIPS 2023.</p> -->
 			</div>
 			</div>
 			</ul>
@@ -375,7 +336,7 @@
 		
 		<!-- START FOOTER -->
 	<!-- START FOOTER -->
-		<div class="footer">
+		<div class="" style="background-image: url('static/bg_img/bg2.png');background-size: cover;">
 			<div class="container">
 				<div class="footer-top">
 					<div class="row">	
@@ -388,7 +349,7 @@
 											height: auto; /* 根据宽度自动调整高度，保持图像比例 */
 										}
 									</style>
-									<img src="static/title/logo4.png" class="fot-logo" alt="">	
+									<img src="static/title/logo6.png" class="fot-logo" alt="" style="margin-left: -40px;">	
 									<!-- <p class="mt-3">
 										If you are interested in what we do, please contact us in time. 
 									</p> -->
@@ -400,53 +361,6 @@
 								</div>							
 							</div>							
 						</div><!--- END COL -->											
-
-						<!-- <div class="col-xl-8 col-lg-8 col-md-12 col-12">		
-							<div class="row">							
-								<div class="col-xl-4 col-lg-4 col-md-6 col-12">						
-									<div class="footer-widget">	
-										<h3 class="fot-title">Quick navigation</h3>
-										<ul>
-											<li><a href="#">PhD Student</a></li>
-											<li><a href="#">Postdoc</a></li>
-											<li><a href="#">Master Student</a></li>
-											<li><a href="#">Visiting Scholar And Internship</a></li>
-										</ul>
-									</div>						
-								</div> -->
-								<!--- END COL -->			
-								
-								<!--底部支持-->
-								<!-- <div class="col-xl-4 col-lg-4 col-md-6 col-12">						
-									<div class="footer-widget">	
-										<h3 class="fot-title">Support</h3>
-										<ul>
-											<li><a href="#">Customer Support</a></li>
-											<li><a href="#">Privacy & Policy</a></li>
-											<li><a href="#">Terms & Condition</a></li>
-											<li><a href="#">Forum</a></li>
-											<li><a href="#">Tour Guid</a></li>
-										</ul>
-									</div>						
-								</div> -->
-								<!--- END COL -->	
-
-								<!--底部信息发送-->
-								<!-- <div class="col-xl-4 col-lg-4 col-md-6 col-12">						
-									<div class="footer-widget">
-										<h3 class="fot-title">Newsletter</h3>								
-										<form class="subscribe-form ">
-											<div class="form-group">
-												<input type="text" class="form-control form--control" name="email" placeholder="Enter Your Email">
-											</div>
-											<button type="submit"><i class="fa-regular fa-paper-plane"></i></button>
-										</form>
-										<p class="mt-3">
-											By subscribing to our mailing list you will always be updated
-										</p>
-									</div>							
-								</div> -->
-								<!--- END COL -->		
 							</div>
 						</div>
 					</div>
