@@ -539,11 +539,10 @@ fieldset {
 	z-index: -1;
 } */
 
-.section-title span::before {
-    top: 20px;
-    bottom: 20px;
-    left: 50px;
-    right: 50px;
+.section-title span {
+	position: relative;
+	display: inline-block;
+	z-index: 1; /* 确保文字在上层 */
 }
 
 .section-title span::before {
