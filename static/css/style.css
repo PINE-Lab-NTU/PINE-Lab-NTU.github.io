@@ -542,17 +542,20 @@ fieldset {
 .section-title span {
 	position: relative;
 	display: inline-block;
-	z-index: 1; /* 确保文字在上层 */
 }
 
 .section-title span::before {
 	position: absolute;
 	content: '';
-	inset: 0; /* 等价于 top: 0; bottom: 0; left: 0; right: 0 */
+	width: 60%;
+	height: 6px;
 	background: #FF9933;
-	border-radius: 4px;
-	z-index: -1; /* 背景在文字后面 */
+	bottom: 0;
+	left: 20%;
+	z-index: -1;
+	border-radius: 3px;
 }
+
 .section-title h2 {
 	font-size: 40px;
 	font-weight: 700;
