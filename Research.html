@@ -120,16 +120,15 @@
 									<tr>
 										<td style="padding: 10px; width: 30%; max-width: 30%; text-align: center; vertical-align: middle;">
 											<video style="width: 305px; height: 250px; margin-right: 10px;" controls>
-												<source src="static/Reserach_demo_video/vla-rl.mp4" type="video/mp4">
+												<source src="static/Reserach_demo_video/rl-rlema-demo.mp4" type="video/mp4">
 												Your browser does not support the video tag.
 											</video>
 										</td>
 										<td width="70%" style="vertical-align: middle; padding: 10px; text-align: left;">
 											<!-- <papertitle style="margin: 0;" href="https://arxiv.org/pdf/2505.18719?"><strong>VLA-RL</strong></papertitle> -->
-											<a href="https://arxiv.org/pdf/2505.18719?" style="margin: 0; font-size: 20px !important;"><strong>Reinforced robotic foundation model learning</strong></a>
-											<p style="margin-top: 10px; margin-bottom: 5px;font-family: Arial, sans-serif;">VLA-RL aims to enable pretrained vision-language-action (VLA) models to effectively perform complex robotic manipulation tasks through online reinforcement learning. Our research focuses on addressing key limitations of current VLAs: (1) while offline pretraining often covers a narrow state-action distribution, we explore how to enhance generalization in unseen environments; (2) sparse reward signals hinder effective policy learning, motivating us to design vision-language dense reward models; (3) the inefficiency of large-scale online fine-tuning leads us to investigate scalable frameworks that improve sample efficiency. As a result, VLA-RL outperforms strong baselines by 4.5% on 40 LIBERO benchmark tasks, achieving state-of-the-art performance in skills like pouring, pipetting, stirring, and precise tool handoff.
-												</p>
-											
+											<papertitle style="margin: 0; font-size: 20px !important;"><a><strong>Reinforced robotic foundation model learning</strong></a></papertitle>
+											<p style="margin-top: 10px; margin-bottom: 5px;font-family: Arial, sans-serif;">VLA-RL aims to advance robotic foundation models from broad pretrained priors to reliable real-world manipulation policies. We focus on three tightly connected directions: foundation model post-training, RL algorithm design, and effort-efficient real-world learning. First, we investigate how online reinforcement learning can adapt vision-language-action (VLA) models beyond the limited state distributions covered by offline pretraining, improving robustness in unseen environments. Second, we design reward, value, and policy optimization methods that provide stable learning signals for long-horizon, sparse-reward, and contact-rich manipulation tasks. Third, we develop sample-efficient and intervention-efficient training frameworks that reduce real-robot trial costs while preserving safety and scalability. Through these efforts, we aim to improve the generalization, success rate, and training efficiency of RL-enhanced robotic foundation models in challenging real-world manipulation scenarios, and scale RL into manufacturing applications.
+											</p>
 											<!-- <a href="data/StableLego.pdf" style="margin-right: 10px;color: rgb(0, 225, 255);" >[PDF]</a>
 											<a href="https://github.com/intelligent-control-lab/StableLego" style="color: rgb(0, 225, 255);">[Code and Dataset]</a> -->
 										</td>
@@ -137,6 +136,8 @@
 								</table>
 							</div>
 						</br>
+
+							
 							<!--第二张图-->
 							<div style="margin-left: 220PX;">
 								<table style="width: 100%;">
@@ -211,22 +212,42 @@
 							<div style="margin-left: 220PX;">
 							<table style="width: 100%;">
 								<tr>
-									<td style="padding: 10px; width: 30%; max-width: 30%; text-align: center; vertical-align: middle;">
-										<video style="width: 305px; height: 260px; margin-right: 10px;" controls>
-											<source src="static/Reserach_demo_video/3d_world_model.mp4" type="video/mp4">
-											Your browser does not support the video tag.
-										</video>
+									<td style="padding: 10px; width: 50%; max-width: 30%; text-align: center; vertical-align: middle;">
+										<img src="static/Reserach_demo_video/wm-simart.gif" style="width: 100%;">
 									</td>
 									<td width="70%" style="vertical-align: middle; padding: 10px; text-align: left;">
 										<papertitle style="margin: 0; font-size: 20px !important;"><a><strong>3D World Model</strong></a></papertitle>
-										<p style="margin-top: 10px; margin-bottom: 5px;font-family: Arial, sans-serif;">A 3D world model empowers an agent to interactively explore imagined environments. By incorporating 3D information, the world model can more accurately reflect the physical properties of the real world. Furthermore, when conditioned on task-specific textual instructions, the 3D world model is capable of predicting corresponding dense rewards, thereby enabling more effective instruction-following and goal-directed behavior.</p>
-										
+										<p style="margin-top: 10px; margin-bottom: 5px;font-family: Arial, sans-serif;">Current VLA model training requires extremely large real-world datasets (~100k hours) with unacceptable data collection cost. Leverage world model to synthesis high-fidelity manipulation data both from explicit world modeling and implicit video generation.</p>
 										<!-- <a href="data/StableLego.pdf" style="margin-right: 10px;color: rgb(0, 225, 255);" >[PDF]</a>
 										<a href="https://github.com/intelligent-control-lab/StableLego" style="color: rgb(0, 225, 255);">[Code and Dataset]</a> -->
 									</td>
 								</tr>
 							</table>
 							</div>
+
+							<!--第六张图-->
+							<div style="margin-left: 220PX;">
+								<table style="width: 100%;">
+									<tr>
+										<td style="padding: 10px; width: 30%;height: 35%; max-width: 30%; text-align: center; vertical-align: middle;">
+											<video style="width: 310px; height: 220px; margin-right: 10px;margin-top: 30px;" controls>
+												<source src="static/Reserach_demo_video/dh-thdt-demo.mp4" type="video/mp4">
+												Your browser does not support the video tag.
+											</video>
+										</td>
+										<td width="70%" style="vertical-align: middle; padding: 10px; text-align: left;">
+											<!-- <papertitle style="margin: 0;"><strong>Bimanual Manipulation</strong></papertitle> -->
+											<papertitle style="margin: 0; font-size: 20px !important;"><a><strong>Tactile & Dexterous Manipulation</strong></a></papertitle>
+											<p style="margin-top: 10px; margin-bottom: 5px;font-family: Arial, sans-serif;">High-precision dexterous manipulation plays a critical role in embodied intelligent robots for industrial automation, especially in contact-rich and fine-grained manipulation tasks. Nevertheless, existing systems remain limited by insufficient tactile perception, expensive data acquisition pipelines, and weak generalization capabilities. Our research focuses on building a full-stack tactile and dexterous manipulation framework that investigates: (1) tactile-ready robotic end-effectors for robust interaction; (2) high-precision and low-cost dexterous teleoperation for tactile-enhanced manipulation learning; (3) tactile-based 3D geometry and force reconstruction for physical understanding; and (4) robotic foundation models for ego-centric bimanual dexterous manipulation. Ultimately, we aim to improve precision, adaptability, and scalability of robotic manipulation in diverse industrial environments.</p>
+											
+											<!-- <a href="data/StableLego.pdf" style="margin-right: 10px;color: rgb(0, 225, 255);" >[PDF]</a>
+											<a href="https://github.com/intelligent-control-lab/StableLego" style="color: rgb(0, 225, 255);">[Code and Dataset]</a> -->
+										</td>
+									</tr>
+								</table>
+								</div>
+							</br>
+							
 						</br>
 
 						</br>
